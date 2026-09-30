@@ -1,0 +1,24 @@
+.app-theme{min-height:100vh;color:var(--ink);background:var(--paper);transition:background-color .25s ease,color .25s ease}
+.app-theme[data-theme="dark"]{color-scheme:dark;--ink:#eef1ec;--muted:#adb6ae;--paper:#151a18;--line:#3a423d;--blue:#7899ff}
+.app-theme[data-theme="dark"] .header{background:#151a18ed;border-color:#ffffff16}
+.app-theme[data-theme="dark"] .brand-mark{background:#d8e2d3;color:#202724}
+.app-theme[data-theme="dark"] .nav-links{color:#c4cdc5}
+.app-theme[data-theme="dark"] .icon-button,.app-theme[data-theme="dark"] .vehicle-card,.app-theme[data-theme="dark"] .filter-panel,.app-theme[data-theme="dark"] .finance-box,.app-theme[data-theme="dark"] .wizard,.app-theme[data-theme="dark"] .contact-row,.app-theme[data-theme="dark"] .review,.app-theme[data-theme="dark"] .modal,.app-theme[data-theme="dark"] .finance-matrix div{background:#202724;color:var(--ink);border-color:#39423c}
+.app-theme[data-theme="dark"] .service-band,.app-theme[data-theme="dark"] .finance-panel{background:#202724;color:var(--ink)}
+.app-theme[data-theme="dark"] .service-grid,.app-theme[data-theme="dark"] .service-item,.app-theme[data-theme="dark"] .detail-section,.app-theme[data-theme="dark"] .filter-group,.app-theme[data-theme="dark"] .finance-matrix{border-color:#3a423d}
+.app-theme[data-theme="dark"] .review-featured,.app-theme[data-theme="dark"] .feature-chip{background:#2a342d;color:#d7e1d6}
+.app-theme[data-theme="dark"] .field,.app-theme[data-theme="dark"] .toolbar-controls select,.app-theme[data-theme="dark"] .view-toggle,.app-theme[data-theme="dark"] .view-toggle button,.app-theme[data-theme="dark"] .condition-options button,.app-theme[data-theme="dark"] .offer-toggle button{background:#171d1a;color:var(--ink);border-color:#465049}
+.app-theme[data-theme="dark"] .condition-options button.selected,.app-theme[data-theme="dark"] .offer-toggle button.selected{background:#263351;color:#b6c7ff;border-color:#7899ff}
+.app-theme[data-theme="dark"] .search-panel{background:#202724;color:var(--ink);border-color:#59635b}
+.app-theme[data-theme="dark"] .search-tabs{border-color:#3a423d}
+.app-theme[data-theme="dark"] .search-tabs button{background:#202724;color:#c4cdc5}
+.app-theme[data-theme="dark"] .search-tabs button.selected{color:#a9bcff}
+.app-theme[data-theme="dark"] .hero-search input{background:#202724;color:var(--ink)}
+.app-theme[data-theme="dark"] .mobile-drawer{background:#202724;border-color:#3a423d}
+.app-theme[data-theme="dark"] .mobile-drawer a,.app-theme[data-theme="dark"] .vehicle-card-title,.app-theme[data-theme="dark"] .filter-title,.app-theme[data-theme="dark"] .filter-group h3,.app-theme[data-theme="dark"] .detail-section h2,.app-theme[data-theme="dark"] .wizard h2,.app-theme[data-theme="dark"] .finance-box h2,.app-theme[data-theme="dark"] .finance-panel h2,.app-theme[data-theme="dark"] .contact-row h3{color:var(--ink)}
+.app-theme[data-theme="dark"] .eyebrow,.app-theme[data-theme="dark"] .field-label,.app-theme[data-theme="dark"] .filter-check,.app-theme[data-theme="dark"] .vehicle-meta,.app-theme[data-theme="dark"] .wizard-copy,.app-theme[data-theme="dark"] .wizard-aside p,.app-theme[data-theme="dark"] .contact-row p,.app-theme[data-theme="dark"] .contact-row a,.app-theme[data-theme="dark"] .hours-table td,.app-theme[data-theme="dark"] .detail-top,.app-theme[data-theme="dark"] .spec-label,.app-theme[data-theme="dark"] .slider-heading,.app-theme[data-theme="dark"] .page-intro p,.app-theme[data-theme="dark"] .section-head p,.app-theme[data-theme="dark"] .finance-hero p{color:#aeb8b0}
+.app-theme[data-theme="dark"] .footer{background:#0e1210}
+.app-theme[data-theme="dark"] .offer-card{background:#0e1210}
+.app-theme[data-theme="dark"] .upload-box{background:#191f1c;color:#c3ccc4;border-color:#566258}
+.app-theme[data-theme="dark"] .map-mock{filter:brightness(.72) saturate(.75)}
+@media(prefers-reduced-motion:reduce){.app-theme{transition:none}}

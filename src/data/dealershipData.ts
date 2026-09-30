@@ -1,0 +1,41 @@
+export type Vehicle = {
+  id: string
+  year: number
+  make: string
+  model: string
+  trim: string
+  price: number
+  mileage: number
+  transmission: string
+  fuelType: string
+  condition: 'New' | 'Certified' | 'Used'
+  body: string
+  image: string
+  images: string[]
+  drivetrain: string
+  engine: string
+  horsepower: number
+  torque: string
+  mpg: string
+  vin: string
+  stock: string
+  badge: string
+  features: string[]
+  location: string
+}
+
+const photo = (id: string, width = 1200) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`
+
+export const vehicles: Vehicle[] = [
+  { id: 'porsche-911', year: 2023, make: 'Porsche', model: '911 Carrera', trim: 'GTS Coupe', price: 142900, mileage: 4820, transmission: 'Automatic', fuelType: 'Gas', condition: 'Certified', body: 'Coupe', image: photo('photo-1503376780353-7e6692767b70'), images: [photo('photo-1503376780353-7e6692767b70'), photo('photo-1502877338535-766e1452684a'), photo('photo-1611859266238-4b98091d9d9b')], drivetrain: 'Rear-wheel drive', engine: '3.0L Twin-Turbo Flat-6', horsepower: 473, torque: '420 lb-ft', mpg: '18 city / 23 hwy', vin: 'WP0AB2A98PS220814', stock: 'NMC-2308', badge: 'Excellent price', features: ['Sport Chrono Package', 'Bose Surround Sound', 'Adaptive Sport Seats', 'Apple CarPlay'], location: 'Northline Downtown' },
+  { id: 'mercedes-eqs', year: 2024, make: 'Mercedes-Benz', model: 'EQS SUV', trim: '580 4MATIC', price: 98750, mileage: 2130, transmission: 'Automatic', fuelType: 'EV', condition: 'Certified', body: 'SUV', image: photo('photo-1618843479313-40f8afb4b4d8'), images: [photo('photo-1618843479313-40f8afb4b4d8'), photo('photo-1617531653332-bd46c24f2068'), photo('photo-1504215680853-026ed2a45def')], drivetrain: 'All-wheel drive', engine: 'Dual electric motors', horsepower: 536, torque: '633 lb-ft', mpg: '285 mi range', vin: '4JGDM2EB5RA012681', stock: 'NMC-2417', badge: 'Low mileage', features: ['Hyperscreen Display', 'Burmester 3D Audio', 'Air Balance Package', 'Panoramic Roof'], location: 'Northline West' },
+  { id: 'bmw-m4', year: 2022, make: 'BMW', model: 'M4', trim: 'Competition xDrive', price: 79900, mileage: 12560, transmission: 'Automatic', fuelType: 'Gas', condition: 'Used', body: 'Coupe', image: photo('photo-1555215695-3004980ad54e'), images: [photo('photo-1555215695-3004980ad54e'), photo('photo-1580273916550-e323be2ae537'), photo('photo-1617814076367-b759c7d7e738')], drivetrain: 'All-wheel drive', engine: '3.0L Twin-Turbo I-6', horsepower: 503, torque: '479 lb-ft', mpg: '16 city / 22 hwy', vin: 'WBS43AZ03NCK81244', stock: 'NMC-2219', badge: 'Single owner', features: ['Carbon Fiber Trim', 'M Sport Exhaust', 'Harman Kardon Audio', 'Head-Up Display'], location: 'Northline Downtown' },
+  { id: 'land-rover-defender', year: 2024, make: 'Land Rover', model: 'Defender 110', trim: 'X-Dynamic SE', price: 83400, mileage: 3810, transmission: 'Automatic', fuelType: 'Hybrid', condition: 'Certified', body: 'SUV', image: photo('photo-1519641471654-76ce0107ad1b'), images: [photo('photo-1519641471654-76ce0107ad1b'), photo('photo-1519245659620-e859806a8d3b'), photo('photo-1506015391300-4802dc74de2e')], drivetrain: 'All-wheel drive', engine: '3.0L Mild Hybrid I-6', horsepower: 395, torque: '406 lb-ft', mpg: '18 city / 23 hwy', vin: 'SALEJ7EX8R2243789', stock: 'NMC-2434', badge: 'In stock', features: ['Air Suspension', 'Meridian Sound', 'Terrain Response 2', 'Cold Climate Pack'], location: 'Northline West' },
+  { id: 'audi-etron-gt', year: 2023, make: 'Audi', model: 'e-tron GT', trim: 'Prestige quattro', price: 89950, mileage: 6740, transmission: 'Automatic', fuelType: 'EV', condition: 'Used', body: 'Sedan', image: photo('photo-1606664515524-ed2f786a0bd6'), images: [photo('photo-1606664515524-ed2f786a0bd6'), photo('photo-1603584173870-7f23fdae1b7a'), photo('photo-1614200187524-dc4b892acf16')], drivetrain: 'All-wheel drive', engine: 'Dual electric motors', horsepower: 637, torque: '612 lb-ft', mpg: '238 mi range', vin: 'WAUEJBFW1P7901193', stock: 'NMC-2322', badge: 'Great price', features: ['Bang & Olufsen Audio', 'Laser Headlights', 'Carbon Roof', 'Adaptive Air Suspension'], location: 'Northline Downtown' },
+  { id: 'volvo-xc90', year: 2024, make: 'Volvo', model: 'XC90 Recharge', trim: 'Ultimate T8', price: 72900, mileage: 3150, transmission: 'Automatic', fuelType: 'Hybrid', condition: 'Certified', body: 'SUV', image: photo('photo-1606016159991-dfe4f2746ad5'), images: [photo('photo-1606016159991-dfe4f2746ad5'), photo('photo-1606664515524-ed2f786a0bd6'), photo('photo-1603584173870-7f23fdae1b7a')], drivetrain: 'All-wheel drive', engine: '2.0L Plug-in Hybrid I-4', horsepower: 455, torque: '523 lb-ft', mpg: '58 MPGe', vin: 'YV4H60CZXR1883612', stock: 'NMC-2421', badge: 'Certified', features: ['Bowers & Wilkins Audio', 'Air Suspension', 'Pilot Assist', 'Nappa Leather'], location: 'Northline West' },
+  { id: 'lexus-lc', year: 2022, make: 'Lexus', model: 'LC 500', trim: 'Inspiration Series', price: 96200, mileage: 8900, transmission: 'Automatic', fuelType: 'Gas', condition: 'Used', body: 'Coupe', image: photo('photo-1552519507-da3b142c6e3d'), images: [photo('photo-1552519507-da3b142c6e3d'), photo('photo-1492144534655-ae79c964c9d7'), photo('photo-1503736334956-4c8f8e92946d')], drivetrain: 'Rear-wheel drive', engine: '5.0L V8', horsepower: 471, torque: '398 lb-ft', mpg: '16 city / 25 hwy', vin: 'JTHHP5AY0NA104553', stock: 'NMC-2236', badge: 'One of one', features: ['Mark Levinson Audio', 'Carbon Fiber Roof', 'Lexus Safety System+', 'Alcantara Trim'], location: 'Northline Downtown' },
+  { id: 'rivian-r1s', year: 2024, make: 'Rivian', model: 'R1S', trim: 'Adventure Dual-Motor', price: 91700, mileage: 1560, transmission: 'Automatic', fuelType: 'EV', condition: 'New', body: 'SUV', image: photo('photo-1533473359331-0135ef1b58bf'), images: [photo('photo-1533473359331-0135ef1b58bf'), photo('photo-1504215680853-026ed2a45def'), photo('photo-1519641471654-76ce0107ad1b')], drivetrain: 'All-wheel drive', engine: 'Dual electric motors', horsepower: 533, torque: '610 lb-ft', mpg: '352 mi range', vin: '7PDSGABL7RN008421', stock: 'NMC-NEW01', badge: 'New arrival', features: ['Meridian Audio', 'Large Battery Pack', 'Dynamic Glass Roof', 'Camp Speaker'], location: 'Northline West' },
+  { id: 'tesla-model-s', year: 2023, make: 'Tesla', model: 'Model S', trim: 'Plaid', price: 84900, mileage: 5100, transmission: 'Automatic', fuelType: 'EV', condition: 'Used', body: 'Sedan', image: photo('photo-1560958089-b8a1929cea89'), images: [photo('photo-1560958089-b8a1929cea89'), photo('photo-1552519507-da3b142c6e3d'), photo('photo-1492144534655-ae79c964c9d7')], drivetrain: 'All-wheel drive', engine: 'Tri-motor electric', horsepower: 1020, torque: '1,050 lb-ft', mpg: '396 mi range', vin: '5YJSA1E68PF498201', stock: 'NMC-2330', badge: 'In stock', features: ['Yoke Steering', 'Premium Audio', 'Glass Roof', 'Autopilot'], location: 'Northline Downtown' },
+  { id: 'genesis-gv80', year: 2024, make: 'Genesis', model: 'GV80', trim: '3.5T Prestige', price: 76800, mileage: 2890, transmission: 'Automatic', fuelType: 'Gas', condition: 'Certified', body: 'SUV', image: photo('photo-1511919884226-fd3cad34687c'), images: [photo('photo-1511919884226-fd3cad34687c'), photo('photo-1503376780353-7e6692767b70'), photo('photo-1618843479313-40f8afb4b4d8')], drivetrain: 'All-wheel drive', engine: '3.5L Twin-Turbo V6', horsepower: 375, torque: '391 lb-ft', mpg: '18 city / 23 hwy', vin: 'KMUHCESC9RU164002', stock: 'NMC-2440', badge: 'Certified', features: ['Ergo Motion Seats', 'Lexicon Audio', '3rd Row Seating', 'Remote Smart Park'], location: 'Northline West' },
+  { id: 'alfa-romeo-tonale', year: 2024, make: 'Alfa Romeo', model: 'Tonale', trim: 'Ti AWD', price: 42800, mileage: 810, transmission: 'Automatic', fuelType: 'Hybrid', condition: 'New', body: 'SUV', image: photo('photo-1494976388531-d1058494cdd8'), images: [photo('photo-1494976388531-d1058494cdd8'), photo('photo-1503736334956-4c8f8e92946d'), photo('photo-1511919884226-fd3cad34687c')], drivetrain: 'All-wheel drive', engine: '1.3L Plug-in Hybrid I-4', horsepower: 285, torque: '347 lb-ft', mpg: '77 MPGe', vin: 'ZASPAKDW5R7D02154', stock: 'NMC-NEW12', badge: 'New arrival', features: ['Harman Kardon Audio', 'Hands-Free Liftgate', 'Level 2 Charging', 'Adaptive Cruise'], location: 'Northline Downtown' },
+]
