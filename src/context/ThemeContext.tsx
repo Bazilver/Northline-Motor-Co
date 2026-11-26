@@ -7,11 +7,16 @@ type ThemeContextValue = { theme: Theme; toggleTheme: () => void }
 const ThemeContext = createContext<ThemeContextValue | null>(null)
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>(() => localStorage.getItem('northline-theme') === 'dark' ? 'dark' : 'light')
-  const value = useMemo(() => ({
-    theme,
-    toggleTheme: () => setTheme((current) => current === 'light' ? 'dark' : 'light'),
-  }), [theme])
+  const [theme, setTheme] = useState<Theme>(() =>
+    localStorage.getItem('northline-theme') === 'dark' ? 'dark' : 'light',
+  )
+  const value = useMemo(
+    () => ({
+      theme,
+      toggleTheme: () => setTheme((current) => (current === 'light' ? 'dark' : 'light')),
+    }),
+    [theme],
+  )
 
   useEffect(() => {
     localStorage.setItem('northline-theme', theme)

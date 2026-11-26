@@ -10,10 +10,16 @@ const MarketplaceContext = createContext<MarketplaceValue | null>(null)
 
 export function MarketplaceProvider({ children }: { children: ReactNode }) {
   const [saved, setSaved] = useState<string[]>([])
-  const value = useMemo(() => ({
-    saved,
-    toggleSaved: (id: string) => setSaved((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]),
-  }), [saved])
+  const value = useMemo(
+    () => ({
+      saved,
+      toggleSaved: (id: string) =>
+        setSaved((current) =>
+          current.includes(id) ? current.filter((item) => item !== id) : [...current, id],
+        ),
+    }),
+    [saved],
+  )
 
   return <MarketplaceContext.Provider value={value}>{children}</MarketplaceContext.Provider>
 }

@@ -15,7 +15,13 @@ function RouteMotion() {
 
   return (
     <AnimatePresence mode="wait">
-      <motion.main key={location.pathname} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.22 }}>
+      <motion.main
+        key={location.pathname}
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -6 }}
+        transition={{ duration: 0.22 }}
+      >
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/inventory" element={<Inventory />} />
